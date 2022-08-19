@@ -1,7 +1,7 @@
 const sumAll = function(int1, int2) {
     let sum = 0;
 
-    if (typeof(int1) != 'number' || typeof(int2) != 'number') {
+    if (!Number.isInteger(int1) || !Number.isInteger(int2)) {
         return 'ERROR';
     }
 
